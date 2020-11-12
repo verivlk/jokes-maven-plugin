@@ -1,9 +1,13 @@
 package com.thalesgroup.trial;
 
+import javax.inject.Named;
+import javax.inject.Singleton;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@Named
+@Singleton
 public class JokesRepository {
     private List<String> jokes = new ArrayList<>();
 
