@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Class where jokes are stored.
+ * source: https://www.readersdigest.ca/
+ */
+
 @Named
 @Singleton
 public class JokesRepository {
@@ -15,6 +20,9 @@ public class JokesRepository {
         this.jokes = jokes;
     }
 
+    /**
+     * Adds first jokes into the list.
+     */
     public JokesRepository() {
         jokes.add("What’s the best thing about Switzerland?\n" +
                 "I don’t know, but the flag is a big plus.\n");
@@ -54,15 +62,25 @@ public class JokesRepository {
         this.jokes.addAll(jokes);
     }
 
+    /**
+     * @return number of jokes
+     */
     public int getJokesSize(){
         return jokes.size();
     }
 
+    /**
+     * @param id position of the joke in the list
+     * @return joke on the id position
+     */
     public String getJoke(int id){
         if (id >= jokes.size()) id = jokes.size() - 1;
         return jokes.get(id);
     }
 
+    /**
+     * @return random joke from the list
+     */
     public String getRandomJoke(){
         Random rand = new Random();
         int rnd = rand.nextInt(getJokesSize());

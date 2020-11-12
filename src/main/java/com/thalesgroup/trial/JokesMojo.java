@@ -8,6 +8,10 @@ import org.apache.maven.plugins.annotations.Mojo;
 
 import javax.inject.Inject;
 
+/**
+ * A simple plugin that shows joke on a successful build.
+ */
+
 @Mojo(name = "joke", defaultPhase = LifecyclePhase.INITIALIZE)
 public class JokesMojo extends AbstractMojo {
 
