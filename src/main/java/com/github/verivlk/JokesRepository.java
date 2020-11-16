@@ -1,4 +1,4 @@
-package com.thalesgroup.trial;
+package com.github.verivlk;
 
 import javax.inject.Named;
 import javax.inject.Singleton;

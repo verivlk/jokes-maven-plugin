@@ -1,4 +1,4 @@
-package com.thalesgroup.trial;
+package com.github.verivlk;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -19,7 +19,7 @@ public class JokesMojo extends AbstractMojo {
     JokesRepository jokesRepository;
 
     @Override
-    public void execute() throws MojoExecutionException, MojoFailureException {
+    public void execute(){
         getLog().info(jokesRepository.getRandomJoke());
     }
 }
