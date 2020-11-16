@@ -78,6 +78,14 @@
        </pluginManagement>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub VeriVlk Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/verivlk/jokes-maven-plugin</url>
+        </repository>
+    </distributionManagement>
+
     <reporting>
         <plugins>
             <plugin>
